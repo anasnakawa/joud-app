@@ -27,15 +27,5 @@
     "grunt-ejs": "~0.2.0",
     "load-grunt-tasks": "~1.0.0",
     "underscore": "~1.7.0"
-  },
-  "ejs": {
-    "pages": [
-      "calendar",
-      "mailbox",
-      "widgets",
-      "ui/buttons",
-      "ui/general",
-      "ui/icons"
-    ]
   }
 }
