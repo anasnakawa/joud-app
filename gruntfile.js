@@ -25,6 +25,11 @@ module.exports = function( grunt ) {
                 , expand: true
                 , flatten: true 
                 , ext: '.html'
+                , options: {
+                    jsFiles: []
+                    , jsFilesBefore: []
+                    , cssFiles: []
+                }
             }
         }
 
