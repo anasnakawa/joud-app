@@ -31,6 +31,13 @@ module.exports = function( grunt ) {
                     , cssFiles: []
                 }
             }
+        },
+
+        watch: {
+            ejs: {
+                files: [ '**/*.ejs' ],
+                tasks: [ 'ejs' ]
+            }
         }
 
     })
