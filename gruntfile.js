@@ -33,7 +33,7 @@ module.exports = function( grunt ) {
                     , cssFiles: []
                     , jouderList: [
                           new joaderFactory( 'Alaa Ahmad', '20', 'avatar' )
-                        , new joaderFactory( 'Samera Mahmood', '12', 'avatar2' )
+                        , new joaderFactory( 'Sara Ali', '12', 'avatar2' )
                         , new joaderFactory( 'Soha Abdullah', '9', 'avatar3' )
                         , new joaderFactory( 'Ahmad Sabri', '10', 'avatar04' )
                     ]
