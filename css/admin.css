@@ -2540,6 +2540,20 @@ Component: timeline
     white-space: normal!important;
   }
 }
+.splash-page .splash {
+  position: absolute;
+}
+.splash-page .app-logo,
+.splash-page .app-logo img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.splash-page center {
+  position: relative;
+  color: white;
+}
 /* 
     Skin Blue 
     ---------

@@ -37,6 +37,10 @@ module.exports = function( grunt ) {
             ejs: {
                 files: [ '**/*.ejs' ],
                 tasks: [ 'ejs' ]
+            },
+            less: {
+                files: [ './less/**/*.less' ],
+                tasks: [ 'less' ]
             }
         }
 
