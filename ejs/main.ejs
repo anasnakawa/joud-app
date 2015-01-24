@@ -9,11 +9,18 @@
  
                                 </div>
                                 <div class="box-body">
-                                    <button class="btn btn-default btn-block">I Need Someone to Pick me Something</button>
+                                    <button id="createJob" class="btn btn-default btn-block">I Need Someone to Pick me Something</button>
                                    <button class="btn btn-default btn-block">I m Willing to Deliver Something on my Way </button>
                                 </div>
                             </div><!-- /.box -->
 					</div>
-
+<script type="text/javascript">
+ $(function () {
+    $("#createJob").click(function (e) {
+ 
+            window.location = 'createJob.html';
+    });
+});
+</script>
 <% jsFiles = [] %>
 <% include base/footer %>

@@ -50,3 +50,12 @@ jQuery.fn.center = function() {
             $(window).scrollLeft()) + "px");
     return this;
 }
+
+$(function () {
+    $("form").submit(function (e) {
+        e.preventDefault();//prevent the form from actually submitting
+       
+       
+            window.location = 'main.html';
+    });
+});
