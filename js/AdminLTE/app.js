@@ -67,7 +67,7 @@ $(function() {
      * ---------------------------------------
      */
     $(".navbar .menu").slimscroll({
-        height: "200px",
+        height: "100px",
         alwaysVisible: false,
         size: "3px"
     }).css("width", "100%");

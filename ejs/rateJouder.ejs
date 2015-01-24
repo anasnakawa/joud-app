@@ -47,10 +47,22 @@
                                     
 									 <div>
 									 
-<div class="well">
-        <span class="rating">
+<div class="box">
+    <h3>How would you rate <%= jouderList[ 0 ].name %>'s service ? </h3>
+        
+        <center>
+          <span class="rating">
           <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
         </span>
+      </center>
+
+    <hr />
+      <div class="form-group">
+          <label>Write a review about <%= jouderList[ 0 ].name %> </label>
+          <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+      </div>
+
+      <div class="btn btn-success btn-block">Rate!</div>
       </div>
 									  
 									 </div>

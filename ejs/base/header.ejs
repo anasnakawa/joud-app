@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="cache.manifest">
     <head>
         <meta charset="UTF-8">
         <title>Joud</title>
@@ -43,39 +43,39 @@
                         <li class="dropdown notifications-menu" style="visibility: visible; position: absolute; top: -50px; right: 0px;">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-warning"></i>
-                                <span class="label label-warning">10</span>
+                                <span class="label label-warning">3</span>
                             </a>
                             <ul class="dropdown-menu" style="right: 0;">
-                                <li class="header">You have 10 notifications</li>
+                                <li class="header">You have 2 notifications</li>
                                 <li>
                                     <!-- inner menu: contains the actual data -->
                                     <ul class="menu">
                                         <li>
                                             <a href="#">
-                                                <i class="ion ion-ios7-people info"></i> 5 new members joined today
+                                                <i class="ion ion-ios7-people info"></i> <%= jouderList[ 0 ].name %> applied to your job
                                             </a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="#">
                                                 <i class="fa fa-warning danger"></i> Very long description here that may not fit into the page and may cause design problems
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="fa fa-users warning"></i> 5 new members joined
+                                                <i class="fa fa-users warning"></i> Job has been deleted
                                             </a>
-                                        </li>
+                                        </li> -->
 
                                         <li>
                                             <a href="#">
-                                                <i class="ion ion-ios7-cart success"></i> 25 sales made
+                                                <i class="ion ion-checkmark-round success"></i> <%= jouderList[ 2 ].name %> has completed "<%= altJob.title %>"
                                             </a>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="#">
                                                 <i class="ion ion-ios7-person danger"></i> You changed your username
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </li>
                                 <li class="footer"><a href="#">View all</a></li>

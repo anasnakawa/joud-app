@@ -28,19 +28,13 @@
                             </div>
                         </div>
 
-                        <div class="row" id="done">
+                        <div class="row" id="done" style="display: none;">
                             <div class="col-md-6">
                                 <h3>Below are some Jouders who want to pick your package</h3>
                                 <hr />
 
                                 <div class="result">
-                                    <% var joaders = []; %>
-                                      <% function joaderFactory( name, price, pic ) { return { name: name, price: price, pic: pic } }%>
-                                      <% joaders.push( new joaderFactory( 'Alaa Ahmad', '10', 'avatar' ) ) %>
-                                      <% joaders.push( new joaderFactory( 'Samera Mahmood', '12', 'avatar2' ) ) %>
-                                      <% joaders.push( new joaderFactory( 'Soha Abdullah', '11', 'avatar3' ) ) %>
-                                      <% joaders.push( new joaderFactory( 'Ahmad Sabri', '9', 'avatar04' ) ) %>
-                                      <% joaders.forEach( function( item ) { %>
+                                      <% jouderList.forEach( function( item, index ) { %>
                                     <div class="media">
                                       <div class="media-left">
                                         <a href="#">
@@ -52,7 +46,7 @@
 
                                           <div class="media-body">
                                             <h4 class="media-heading"><%= item.name %>
-                                                <label class="label label-info"><%= item.price %> AED</label>
+                                                <label class="label label-success"><%= item.price %> AED</label>
                                             </h4>
                                             <span class="rating">
                                               <span class="fa fa-star"></span>
@@ -106,6 +100,24 @@
 </style>
 <script>
 (function($) {
+
+  var $waiting = $( '#waiting' );
+  var $done = $( '#done' );
+  var $list = $done.find( '.media' );
+
+  setTimeout( function() {
+    $waiting.hide();
+    $done.show();
+    $list.eq( 0 ).show();
+
+    setTimeout(function() {
+      $list.eq( 1 ).show();
+
+      setTimeout(function() {
+        $list.show();
+      }, 2000 )
+    }, 3000 )
+  }, 4000 )
 
 })(jQuery)
 </script>
