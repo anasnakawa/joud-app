@@ -1,0 +1,26 @@
+<% cssFiles = [] %>
+<% include base/header %>
+                    
+ 
+
+                     <div class="row">
+                          <div class="box-body">                  
+                                    <div class="alert alert-success alert-dismissable">
+                                        <i class="fa fa-check"></i>
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        <b>Your Job is Successfully Published  !</b> 
+										<br/>
+										now you will wait for some Jouder to pick your Package
+                                    </div>
+                                </div><!-- /.box-body -->
+					</div>
+<script type="text/javascript">
+ $(function () {
+    $("#createJob").click(function (e) {
+ 
+            window.location = 'createJob.html';
+    });
+});
+</script>
+<% jsFiles = [] %>
+<% include base/footer %>

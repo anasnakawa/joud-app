@@ -39,7 +39,7 @@
                                         </div>
 
                                     
-									<button class="btn btn-default btn-block">Create</button>
+									<button id="createJob" class="btn btn-default btn-block">Create</button>
                                     </form>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
@@ -47,6 +47,13 @@
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 <script type="text/javascript">
+ $(function () {
+    $("#createJob").click(function (e) {
+  e.preventDefault();//prevent the form from actually submitting
+       
+            window.location = 'waitingJouder.html';
+    });
+});
 function initialize() {
 
 	 var mapProp = {
