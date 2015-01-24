@@ -3401,3 +3401,19 @@ fieldset[disabled] .btn-vk.active {
   color: #587ea3;
   background-color: #ffffff;
 }
+.bg-transparent,
+.bg-trans {
+  background-color: transparent !important;
+}
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.align-right {
+  text-align: right;
+}
+.box {
+  border-top-width: 1px;
+}
