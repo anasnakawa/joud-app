@@ -11,15 +11,21 @@
                                         <!-- text input -->
                                         <div class="form-group">
                                             <label>Title</label>
-                                            <input type="text" class="form-control" placeholder="Enter ..."/>
+                                            <input type="text" class="form-control" value="Pick laptop from Al Qusais" placeholder="Enter ..."/>
                                         </div>
                                         
 
                                         <!-- textarea -->
                                         <div class="form-group">
                                             <label>Details </label>
-                                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                            <textarea id="details" class="form-control" rows="4" placeholder="Enter ..." value=""></textarea>
                                         </div>
+
+  <script>
+  $(function() {
+    $('#details').val( 'I need someone to pick my laptop from my home at Al Qusais\nlocation attached\nThanks!' )
+  })
+  </script>
 
 
 									<div class="form-group" id="priceArea">
