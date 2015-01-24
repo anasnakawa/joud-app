@@ -22,10 +22,13 @@
   color: #777777;
 }
 .rating span.star:hover:before,
-.rating span.star:hover ~ span.star:before {
+.rating span.star:hover ~ span.star:before,
+.rating span.star.clicked:before,
+.rating span.star.clicked ~ span.star:before {
   content: "\f005";
   color: #e3cf7a;
 }
+
 </style>
 
                      <div class="row">
@@ -49,7 +52,7 @@
           <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
         </span>
       </div>
-									 
+									  
 									 </div>
                                     </form>
                                 </div><!-- /.box-body -->
@@ -61,8 +64,9 @@
  $(function () {
     $(".star").click(function (e) {
            e.preventDefault();//prevent the form from actually submitting
-       
-            window.location = 'main.html';
+		 $(this).toggleClass('clicked');
+      // $(this).css("clicked");
+            //window.location = 'main.html';
     });
 });
  
